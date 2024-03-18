@@ -13,8 +13,8 @@ export function generationHtml(need, list) {
 
 export function changeChecked(item) {
   const arr = item.src.split("/");
-  console.log(item.src);
-  if (arr[3] + "/" + arr[4] === "img/icons-off.png") {
+  console.log(arr[arr.length - 1]);
+  if (arr[arr.length - 1] === "icons-off.png") {
     item.src = "img/icons-on.png";
   } else {
     item.src = "img/icons-off.png";
